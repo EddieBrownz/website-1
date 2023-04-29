@@ -1,0 +1,110 @@
+
+.header{
+        height: 160px;
+        display: flex;
+        flex-direction:column;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color:rgba(69, 123, 157, 1);
+}
+.header1{
+        
+       display: flex ;
+       flex-direction: row;
+        height: 80px;
+        justify-content: center;
+        background-color:rgba(69, 123, 157, 1);
+        
+
+}
+.menu{
+      
+       height: 60px;
+       display: flex ;
+       flex-direction: row;
+        height: 80px;
+        justify-content: center;
+        background-color: rgba(231, 209, 134, 1);
+        
+
+}
+.div_menu{
+        margin: 20px;
+        border-right: 1px solid rgba(69, 123, 157, 1);
+        padding-right: 10px;
+}
+.logo-div{
+        display: flex;
+        position: fixed;
+        width: auto;
+        left: 100px;
+}
+
+.logo{
+        width: 140px;
+        
+        
+       
+        
+}
+
+.footer{
+       
+        position: fixed;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        background-color:rgba(69, 123, 157, 1);
+
+}
+.footer-1{
+        display: flex ;
+        flex-direction: row;
+        height: 75px;
+        justify-content: left;
+        margin-left: 50px;
+       
+}
+.logo-text{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 50px;
+        margin-top: 10px;
+        font-style: bold;
+        color: rgba(231, 209, 134, 1);
+        text-decoration: none;
+}
+.footer-text{
+        
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        color: rgba(231, 209, 134, 1);
+}
+.link{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;
+        text-decoration: none;
+        
+        color: rgba(69, 123, 157, 1);
+}
+.mail{
+        color: rgba(231, 209, 134, 1); 
+}
+.phone{
+        color: rgba(231, 209, 134, 1); 
+}
+@media screen and (max-width: 768px) {
+        .logo-div {
+                display: none;
+        }
+}
+@media screen and (max-width: 768px) {
+       
+        .header {
+          flex-direction: column;
+          align-items: center;
+        }
+}
