@@ -103,10 +103,4 @@
     }
 }
 
-@media screen and (max-width: 568px) {
 
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-}
