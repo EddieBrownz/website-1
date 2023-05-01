@@ -1,193 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta
-   charset="UTF-8"
-  />
-  <meta
-   http-equiv="X-UA-Compatible"
-   content="IE=edge"
-  />
-  <meta
-   name="viewport"
-   content="width=device-width, initial-scale=1.0"
-  />
-  <title>
-   Yttertavle Ägg
-  </title>
-  <link
-   rel="stylesheet"
-   href="styles/general.css"
-  />
-  <link
-   rel="stylesheet"
-   href="styles/header.css"
-  />
-  <link
-   rel="stylesheet"
-   href="styles/products.css"
-  />
- </head>
+<html lang="sv">
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+          content="Yttertavle Ägg är en gård som erbjuder högkvalitativa äggprodukter. Besök vår hemsida för att utforska våra produkter, äggfakta och kontakta oss." />
+    <meta property="og:title"
+          content="Yttertavle Ägg - Kvalitetsägg från vår gård" />
+    <meta property="og:type"
+          content="website" />
+    <meta property="og:url"
+          content="https://calm-pond-07fcc0003.3.azurestaticapps.net/index.html?fbclid=IwAR0HIAKmcwRAGyz6_2bZXjqk5iJIIagujAIA_hx3CYv3zU_thDGHV_CrUNw" />
 
- <header>
-  <div
-   class="header"
-  >
-   <div
-    class="logo-div"
-   >
-    <img
-     class="logo"
-     src="pics/Ellipse 1.png"
-    />
-   </div>
+    <meta property="og:description"
+          content="Yttertavle Ägg är en gård som erbjuder högkvalitativa äggprodukter. Besök vår hemsida för att utforska våra produkter, äggfakta och kontakta oss." />
 
-   <div
-    class="header1"
-   >
-    <div
-     class="name"
-    >
-     <p
-      class="logo-text"
-     >
-      <a
-       href="index.html"
-       class="logo-text"
-       >Yttertavle
-       Ägg</a
-      >
-     </p>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <title>
+        Yttertavle Ägg
+    </title>
+    <link rel="stylesheet"
+          href="styles/general.css" />
+    <link rel="stylesheet"
+          href="styles/header.css" />
+    <link rel="stylesheet"
+          href="styles/products.css" />
+</head>
+
+<header>
+    <div class="header">
+        <div class="logo-div">
+            <img class="logo"
+                 src="pics/Ellipse_1.png" />
+        </div>
+
+        <div class="header1">
+            <div class="name">
+                <p class="logo-text">
+                    <a href="index.html"
+                       class="logo-text">
+                        Yttertavle
+                        Ägg
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="div_menu">
+                <a href="index.html"
+                   class="link">Home</a>
+            </div>
+
+            <div class="div_menu">
+                <a href="Produkter.html"
+                   class="link">Produkter</a>
+            </div>
+            <div class="div_menu">
+                <a href="fact.html"
+                   class="link">Äggfakta</a>
+            </div>
+            <div class="div_menu">
+                <a href="try.html"
+                   class="link">Contact</a>
+            </div>
+        </div>
     </div>
-   </div>
-   <div
-    class="menu"
-   >
-    <div
-     class="div_menu"
-    >
-     <a
-      href="index.html"
-      class="link"
-      >Home</a
-     >
-    </div>
+</header>
+<body class="body-contact">
+    <h1>
+        Contact Us
+    </h1>
+    <form method="post"
+          action="contact.php">
+        <label for="name">Name:</label>
+        <input type="text"
+               id="name"
+               name="name"
+               placeholder="Enter your name" />
 
-    <div
-     class="div_menu"
-    >
-     <a
-      href="Produkter.html"
-      class="link"
-      >Produkter</a
-     >
-    </div>
-    <div
-     class="div_menu"
-    >
-     <a
-      href="fact.html"
-      class="link"
-      >Äggfakta</a
-     >
-    </div>
-    <div
-     class="div_menu"
-    >
-     <a
-      href="try.html"
-      class="link"
-      >Contact</a
-     >
-    </div>
-   </div>
-  </div>
- </header>
- <body
-  class="body-contact"
- >
-  <h1>
-   Contact Us
-  </h1>
-  <form
-   method="post"
-   action="contact.php"
-  >
-   <label for="name"
-    >Name:</label
-   >
-   <input
-    type="text"
-    id="name"
-    name="name"
-    placeholder="Enter your name"
-   />
+        <label for="email">Email:</label>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="Enter your email address" />
 
-   <label
-    for="email"
-    >Email:</label
-   >
-   <input
-    type="email"
-    id="email"
-    name="email"
-    placeholder="Enter your email address"
-   />
+        <label for="message">Message:</label>
+        <textarea id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Enter your message"></textarea>
 
-   <label
-    for="message"
-    >Message:</label
-   >
-   <textarea
-    id="message"
-    name="message"
-    rows="5"
-    placeholder="Enter your message"
-   ></textarea>
-
-   <input
-    type="submit"
-    value="Send"
-   />
-  </form>
- </body>
- <footer
-  class="footer"
- >
-  <div
-   class="footer-1"
-  >
-   <div>
-    <p
-     class="footer-text"
-    >
-     Adress:
-     Yttertavle 341,
-     905 96 Umeå
-    </p>
-    <p
-     class="footer-text"
-    >
-     <a
-      href="tel:+4609029123"
-      tel="+4609029123"
-      class="phone"
-     >
-      Tel :
-      +4609029123</a
-     >
-    </p>
-    <p
-     class="footer-text"
-    >
-     <a
-      href="mailto:info@yttertavleagg.com?subject=Subject Line&body=Body Text"
-      class="mail"
-      >Mail:
-      info@yttertavleagg.com</a
-     >
-    </p>
-   </div>
-  </div>
- </footer>
+        <input type="submit"
+               value="Send" />
+    </form>
+</body>
+<footer class="footer">
+    <div class="footer-1">
+        <div>
+            <p class="footer-text">
+                Adress:
+                Yttertavle 341,
+                905 96 Umeå
+            </p>
+            <p class="footer-text">
+                <a href="tel:+4609029123"
+                   class="phone">+4609029123</a>
+            </p>
+            <p class="footer-text">
+                <a href="mailto:info@yttertavleagg.com?subject=Subject%20Line&body=Body%20Text"
+                   class="mail">info@yttertavleagg.com</a>
+            </p>
+        </div>
+    </div>
+</footer>
 </html>
