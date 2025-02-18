@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage with jQuery UI and Canvas</title>
+    <!-- Link to jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Link to jQuery UI CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the draggable element */
+        #draggable {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            text-align: center;
+            border: 2px solid #333;
+            cursor: move;
+            margin: 50px;
+        }
+
+        /* Styling for canvas */
+        canvas {
+            border: 1px solid #000;
+            margin-top: 30px;
+        }
+
+        /* Basic styling for the draggable message */
+        #message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        /* Button styling */
+        #showMessage {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #showMessage:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Draggable Element -->
+    <div id="draggable">
+        Drag me!
+    </div>
+
+    <!-- Button to show message -->
+    <button id="showMessage">Click Me!</button>
+
+    <!-- Hidden message that will fade in -->
+    <div id="message">Hello, this is a hidden message!</div>
+
+    <!-- Canvas for drawing -->
+    <canvas id="myCanvas" width="400" height="400"></canvas>
+
+    <script>
+        // jQuery UI Draggable Example
+        $(document).ready(function() {
+            // Make the element with id 'draggable' draggable
+            $('#draggable').draggable();
+
+            // jQuery FadeIn Example (Message)
+            $('#showMessage').on('click', function() {
+                $('#message').fadeIn('slow');  // Fade in the hidden message
+            });
+
+            // Canvas Example (Draw Rotated Rectangle)
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+
+            // Save the current state of the canvas
+            ctx.save();
+
+            // Move the canvas origin to the center
+            ctx.translate(canvas.width / 2, canvas.height / 2);
+
+            // Rotate the canvas by 45 degrees (in radians)
+            ctx.rotate(45 * Math.PI / 180);
+
+            // Draw a rectangle
+            ctx.fillStyle = "blue";
+            ctx.fillRect(-50, -50, 100, 100);  // Rectangle with width=100, height=100, centered at origin
+
+            // Restore the canvas to its original state
+            ctx.restore();
+        });
+    </script>
+</body>
+</html>

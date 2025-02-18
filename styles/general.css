@@ -94,6 +94,33 @@ font-family: 'Roboto', sans-serif;
        
       
 }
+.button-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+#getRandomFact {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        width: '180px';
+        color: rgba(69, 123, 157, 1);
+        background-color: rgba(231, 209, 134, 1);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    #getRandomFact:hover {
+        
+        background-color: rgba(69, 123, 157, 1);
+        color:  rgba(231, 209, 134, 1);
+        transform: scale(1.05);
+    }
+
+   
 
 .body-pargraph-2{
         font-family: 'Roboto', sans-serif;
@@ -158,8 +185,43 @@ input[type="submit"] {
 input[type="submit"]:hover {
         background-color: #555555;
 }
-@media screen and (max-width: 568px) {
-        .body-1, .body-2 {
-          grid-template-columns: 1fr;
+@media print {
+        body {
+            background-color: #FFFFFF;
+            color: #000000;
         }
-      }
+         .body-contact, .body-container, .body-1, .body-2, .body-text, .body-pic, .body-pargraph {
+            display: block;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        img {
+            display: none; 
+        }
+        .menu,.div_menu, footer, nav, .no-print,  .links {
+                display: none;
+            }
+        .background-image {
+            background-image: none;
+        }
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        a.logo-text {
+                text-decoration: none;
+                color: #000000;
+            }
+        .printable {
+            display: block;
+        }
+        .non-printable {
+            display: none;
+        }
+        button.getRandomFact{
+                background-color:rgba(231, 209, 134, 1) ;     
+        }
+    }
+    
